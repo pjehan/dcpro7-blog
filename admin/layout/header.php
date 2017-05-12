@@ -13,6 +13,7 @@
 
         <!-- Bootstrap core CSS -->
         <link href="<?php echo $website_root; ?>admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo $website_root; ?>admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
         <link href="<?php echo $website_root; ?>admin/css/dashboard.css" rel="stylesheet">

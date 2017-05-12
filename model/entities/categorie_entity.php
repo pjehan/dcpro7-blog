@@ -39,3 +39,23 @@ function getCategorie($id) {
 
     return $stmt->fetch();
 }
+
+function insertCategorie($libelle) {
+    global $connection;
+
+    $query = "INSERT INTO categorie (libelle) VALUES (:libelle);";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":libelle", $libelle);
+    $stmt->execute();
+}
+
+function deleteCategorie($id) {
+    global $connection;
+
+    $query = "DELETE FROM categorie WHERE id = :id;";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->execute();
+}
