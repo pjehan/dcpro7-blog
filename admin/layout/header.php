@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config/parameters.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -11,10 +12,10 @@
         <title>Administration</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo $website_root; ?>admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="css/dashboard.css" rel="stylesheet">
+        <link href="<?php echo $website_root; ?>admin/css/dashboard.css" rel="stylesheet">
 
     </head>
 

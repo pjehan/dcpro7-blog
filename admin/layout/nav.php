@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Administration</a>
+            <a class="navbar-brand" href="<?php echo $website_root; ?>admin/">Administration</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -17,7 +17,7 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="../logout.php">Déconnexion</a></li>
+                        <li><a href="<?php echo $website_root; ?>logout.php">Déconnexion</a></li>
                     </ul>
                 </li>
             </ul>
