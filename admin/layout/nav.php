@@ -11,8 +11,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="<?php echo $website_root; ?>">
+                        <i class="fa fa-external-link"></i>
+                        Front
+                    </a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i>
                         <?php echo $current_user["email"]; ?>
                         <span class="caret"></span>
                     </a>
