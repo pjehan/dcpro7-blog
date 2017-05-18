@@ -113,13 +113,22 @@ function insertArticle($titre, $image, $contenu, $utilisateur_id, $categorie_id)
     $stmt->execute();
 }
 
-function updateArticle($id, $libelle) {
+function updateArticle($id, $titre, $image, $contenu, $categorie_id) {
     global $connection;
 
-    $query = "UPDATE categorie SET libelle = :libelle WHERE id = :id;";
+    $query = "UPDATE article SET
+                titre = :titre,
+                image = :image,
+                contenu = :contenu,
+                categorie_id = :categorie_id 
+            WHERE id = :id
+    ;";
 
     $stmt = $connection->prepare($query);
-    $stmt->bindParam(":libelle", $libelle);
+    $stmt->bindParam(":titre", $titre);
+    $stmt->bindParam(":image", $image);
+    $stmt->bindParam(":contenu", $contenu);
+    $stmt->bindParam(":categorie_id", $categorie_id);
     $stmt->bindParam(":id", $id);
     $stmt->execute();
 }

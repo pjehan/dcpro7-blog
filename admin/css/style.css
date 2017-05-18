@@ -1,3 +1,8 @@
 table form {
     display: inline-block;
 }
+
+.img-thumbnail {
+    max-height: 150px;
+    max-width: 150px;
+}
