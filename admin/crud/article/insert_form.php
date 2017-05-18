@@ -8,7 +8,7 @@ $liste_categories = getAllCategories();
 
 <h1>Ajouter un article</h1>
 
-<form action="insert_query.php" method="POST">
+<form action="insert_query.php" method="POST" enctype="multipart/form-data">
     <div class="form-group">
         <label for="inputTitre">Titre</label>
         <input type="text" name="titre" class="form-control" id="inputTitre" placeholder="Titre">
