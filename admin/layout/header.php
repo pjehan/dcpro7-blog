@@ -17,6 +17,7 @@
 
         <!-- Custom styles for this template -->
         <link href="<?php echo $website_root; ?>admin/css/dashboard.css" rel="stylesheet">
+        <link href="<?php echo $website_root; ?>admin/css/style.css" rel="stylesheet">
 
     </head>
 

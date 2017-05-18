@@ -41,6 +41,10 @@ require_once __DIR__ . '/../../layout/header.php';
                             Supprimer
                         </button>
                     </form>
+                    <a href="update_form.php?id=<?php echo $categorie["id"]; ?>" class="btn btn-warning">
+                        <i class="fa fa-edit"></i>
+                        Modifier
+                    </a>
                 </td>
             </tr>
         <?php endforeach; ?>

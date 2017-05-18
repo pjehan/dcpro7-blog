@@ -50,6 +50,17 @@ function insertCategorie($libelle) {
     $stmt->execute();
 }
 
+function updateCategorie($id, $libelle) {
+    global $connection;
+
+    $query = "UPDATE categorie SET libelle = :libelle WHERE id = :id;";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":libelle", $libelle);
+    $stmt->bindParam(":id", $id);
+    $stmt->execute();
+}
+
 function deleteCategorie($id) {
     global $connection;
 
