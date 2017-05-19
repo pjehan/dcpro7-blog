@@ -33,7 +33,7 @@ function getUserByEmailPassword($email, $password) {
             utilisateur.admin
         FROM utilisateur
         WHERE utilisateur.email = :email
-        AND utilisateur.mdp = :password
+        AND utilisateur.mdp = MD5(:password)
     ";
 
     $stmt = $connection->prepare($query);
