@@ -9,6 +9,8 @@
         <li class="<?php if(strpos($_SERVER["REQUEST_URI"], "crud/categorie")) : ?>active<?php endif; ?>">
             <a href="<?php echo $website_root; ?>admin/crud/categorie/">Catégories</a>
         </li>
-        <li><a href="#">Tags</a></li>
+        <li class="<?php if(strpos($_SERVER["REQUEST_URI"], "crud/tag")) : ?>active<?php endif; ?>">
+            <a href="<?php echo $website_root; ?>admin/crud/tag/">Tags</a>
+        </li>
     </ul>
 </div>
